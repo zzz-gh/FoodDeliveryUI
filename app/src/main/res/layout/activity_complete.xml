@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".activities.CompleteActivity">
+
+    <LinearLayout
+        android:id="@+id/llSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_10">
+
+        <LinearLayout
+            android:id="@+id/llRegisterTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60"
+            android:layout_marginTop="@dimen/marginTop_20"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/cBackToHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/background_icon"
+                android:gravity="center"
+                android:padding="@dimen/padding_15">
+
+                <ImageView
+                    android:id="@+id/ivClose"
+                    android:layout_width="@dimen/icon_small_size"
+                    android:layout_height="@dimen/icon_small_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_back" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_left_10"
+                android:background="@drawable/background_bottom_color_gray"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_10">
+
+                <ImageView
+                    android:id="@+id/ivSearch"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/search_black" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ivSearch"
+                    android:hint="@string/search_something"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="@dimen/textSize_11" />
+
+                <ImageView
+                    android:layout_width="@dimen/imageIconSize"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_close_black" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMenuCollect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/llSearch"
+        android:padding="@dimen/padding_15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/complete"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize_20" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/marginRight_10"
+                        android:text="@string/view_all"
+                        android:textColor="@color/orange_medium"
+                        android:textSize="@dimen/textSize_15" />
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_small_size"
+                        android:layout_height="@dimen/icon_small_size"
+                        android:src="@drawable/orange_greater_than" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop_10"
+            android:background="@drawable/background_orange"
+            android:padding="@dimen/padding_12">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/rlFood"
+                android:layout_width="@dimen/dimen_70"
+                android:layout_height="@dimen/dimen_70"
+                android:scaleType="centerCrop"
+                android:src="@drawable/food7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:layout_toEndOf="@id/rlFood"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/french_pizza_spicy"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textSize_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivered"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textSize_15" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_25_02"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textSize_15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/_9_oct"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textSize_15" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_15"
+            android:background="@drawable/background_color_bottom"
+            android:padding="@dimen/padding_12">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/rlFood2"
+                android:layout_width="@dimen/dimen_70"
+                android:layout_height="@dimen/dimen_70"
+                android:scaleType="centerCrop"
+                android:src="@drawable/food2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:layout_toEndOf="@id/rlFood2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/french_pizza_spicy"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textSize_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivered"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textSize_15" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_25_02"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textSize_15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/_9_oct"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textSize_15" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <include
+            android:id="@+id/bottomSheet"
+            layout="@layout/bottom_sheet"
+            />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

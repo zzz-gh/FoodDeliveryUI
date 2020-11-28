@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    android:layout_marginTop="@dimen/marginTop_20"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/diment_80"
+        android:layout_height="@dimen/diment_80"
+        android:layout_weight="1"
+        android:src="@drawable/food1"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pizza_tomato"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSize_20"
+            android:fontFamily="@font/roboto_regular"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_11_99"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSize_15"
+            android:fontFamily="@font/roboto_regular"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_50"
+        android:src="@drawable/plus_blue"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

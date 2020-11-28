@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".fragments.Intro1">
+
+    <RelativeLayout
+        android:id="@+id/llRegisterTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_15"
+        android:orientation="horizontal"
+        >
+        Register1<ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:src="@drawable/ic_cross"
+            android:background="@drawable/background_icon"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/marginTop_120"
+        android:background="@drawable/background_fl_color_register"
+        android:paddingLeft="@dimen/paddingLeft_20"
+        android:paddingRight="@dimen/paddingRight_20"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="@dimen/dimen_300"
+            android:layout_height="@dimen/dimen_300"
+            android:src="@drawable/p1"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/tvRegisterPh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notification"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_20"
+            android:layout_marginTop="@dimen/marginTop_20"
+            android:layout_gravity="center"
+            android:fontFamily="@font/robotoslab_bold"
+            />
+
+
+        <TextView
+            android:id="@+id/tvLetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/marginTop_20"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/stay_notified_about_new_food_updates_menu_and_recipes"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:paddingLeft="@dimen/paddingLeft_20"
+            android:paddingRight="@dimen/paddingRight_20"
+            android:textSize="@dimen/textSize_15" />
+
+
+        <Button
+            android:id="@+id/btnAllowNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_bottom"
+            android:layout_marginTop="@dimen/marginTop_20"
+            android:layout_alignParentBottom="true"
+            android:text="@string/allow_notification"
+            android:textColor="@color/colorPrimary"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_stroke_bottom"
+            android:layout_marginTop="@dimen/marginTop_10"
+            android:layout_alignParentBottom="true"
+            android:text="@string/don_t_allow"
+            android:layout_marginBottom="@dimen/marginBottom_20"
+            android:textColor="@android:color/white"
+            />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

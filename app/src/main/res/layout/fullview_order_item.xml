@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_350"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginRight="@dimen/marginRight_14"
+    android:layout_marginTop="@dimen/marginTop_5">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_120"
+        app:cardCornerRadius="12dp"
+        android:elevation="@dimen/elevation"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/food1"
+            android:scaleType="fitXY"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop_20"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_18"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text="@string/break_french_toast"
+            android:textColor="@android:color/black"
+            />
+        <ImageView
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:src="@drawable/mark"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/marginTop_10"
+            android:layout_alignParentEnd="true"
+
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_15"
+            android:gravity="center"
+            android:text="@string/breakfast"
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_11_99"
+            android:textSize="@dimen/textSize_18"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/marginTop_10"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

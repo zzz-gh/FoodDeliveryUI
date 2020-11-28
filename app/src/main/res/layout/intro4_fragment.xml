@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/padding_15"
+    tools:context=".fragments.Intro1">
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:src="@drawable/ic_close"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/tvT1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/we_made_payment"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textSize_20"
+        android:fontFamily="@font/robotoslab_bold"
+        android:textStyle="normal"
+        android:layout_below="@id/ivClose"
+        android:layout_marginTop="@dimen/marginTop_20"
+        android:layout_marginLeft="@dimen/margin_left_20"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/tvT2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/is_easy"
+        android:layout_marginLeft="@dimen/margin_left_20"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textSize_20"
+        android:layout_below="@id/tvT1"
+        android:fontFamily="@font/robotoslab_bold"
+        android:textStyle="normal"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvT2"
+        android:layout_marginTop="@dimen/marginTop_20"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/ivMain"
+            android:layout_width="@dimen/dimen_300"
+            android:layout_height="@dimen/dimen_300"
+            android:src="@drawable/p1" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_support_credit_card_and_paypal_features"
+        android:layout_marginLeft="@dimen/margin_left_20"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textSize_18"
+        android:layout_below="@id/llMain"
+        android:maxLines="3"
+        android:fontFamily="@font/roboto_regular"
+        android:textStyle="normal"
+        android:layout_marginTop="@dimen/marginTop_20"
+        android:gravity="left"
+        />
+    
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/get_started"
+        android:background="@drawable/background_bottom"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="@dimen/marginBottom_20"
+        />
+
+
+
+</RelativeLayout>

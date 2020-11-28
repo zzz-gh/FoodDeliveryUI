@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    tools:context=".fragments.Intro1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_15"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/llRegisterTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60"
+            android:layout_marginTop="@dimen/marginTop_20"
+            android:orientation="horizontal"
+            >
+            <ImageView
+
+                android:layout_width="@dimen/imageIconSize"
+                android:layout_height="@dimen/imageIconSize"
+                android:src="@drawable/ic_back"
+                android:layout_gravity="center"
+                android:background="@drawable/background_icon"
+                />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_20"
+            android:text="@string/payment"
+            android:fontFamily="@font/robotoslab_bold"/>
+
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/margin_left_10"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPaymentStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_160" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_15"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/background_bottom_color_gray"
+            android:padding="@dimen/padding_15"
+            android:layout_marginTop="@dimen/marginTop_5"
+
+            >
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:src="@drawable/ic_add"
+                android:layout_marginLeft="@dimen/margin_left_10"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_20"
+                android:text="@string/add_another_location"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textSize_18"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop_10"
+            android:background="@drawable/background_bottom_color_gray"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_15"
+            android:paddingLeft="@dimen/paddingLeft_20">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/background_green_medium"
+                android:gravity="center"
+                android:padding="@dimen/padding_15">
+
+                <ImageView
+                    android:id="@+id/ivBasket"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:src="@drawable/call_action" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_20"
+                        android:text="@string/work"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize_18" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_20"
+                        android:text="@string/visa"
+                        android:textColor="#1B4DB1"
+                        android:fontFamily="@font/robotoslab_bold"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="@dimen/textSize_18" />
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_20"
+                    android:layout_marginTop="@dimen/marginTop_10"
+                    android:text="@string/broadindescess"
+                    android:textSize="@dimen/textSize_15" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/marginTop_5"
+        android:padding="@dimen/padding_15"
+        android:background="@drawable/background_fl_color_register">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop_20"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_15"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="@string/oct_2019"
+                android:textColor="@android:color/white"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:src="@drawable/ic_vert"
+                    android:layout_marginLeft="@dimen/margin_left_10"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_18"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="@string/stopout"
+                android:textColor="@android:color/white"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_15"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginRight="@dimen/marginRight_10"
+                    android:gravity="center"
+                    android:text="@string/_12_99"
+                    android:textColor="@android:color/white"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_18"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="@string/delivery_fee"
+                android:textColor="@android:color/white"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_15"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginRight="@dimen/marginRight_10"
+                    android:gravity="center"
+                    android:text="@string/_2"
+                    android:textColor="@android:color/white"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop_20"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_18"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="@string/total"
+                android:textColor="@android:color/white"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_20"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginRight="@dimen/marginRight_10"
+                    android:gravity="center"
+                    android:text="@string/_14_99"
+                    android:textColor="@android:color/white"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btnCon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_10"
+                android:background="@drawable/background_bottom"
+                android:text="@string/continue_text"
+                android:layout_marginBottom="@dimen/marginTop_10"
+                android:textColor="@android:color/black"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

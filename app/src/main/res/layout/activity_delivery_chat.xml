@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.DeliveryChatActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_icon"
+        android:layout_marginLeft="@dimen/margin_left_20"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:padding="@dimen/padding_5">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/icon_small_size"
+            android:layout_height="@dimen/icon_small_size"
+            android:src="@drawable/ic_back" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="1.0dp"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop_30"
+            android:background="@drawable/background_bottom_color_gray"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_15"
+            android:paddingLeft="@dimen/paddingLeft_20">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/background_orange_medium"
+                android:gravity="center"
+                android:padding="@dimen/padding_15">
+
+                <ImageView
+                    android:id="@+id/ivBasket"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:src="@drawable/ic_bb_bus" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_20"
+                        android:text="@string/delivery_to"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize_18" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_20"
+                        android:layout_marginTop="@dimen/marginTop_10"
+                        android:text="@string/_30_min"
+                        android:textSize="@dimen/textSize_15" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop_5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_progress"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textSize_18" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/marginRight_10"
+                    android:text="@string/details"
+                    android:textColor="@color/orange_medium"
+                    android:textSize="@dimen/textSize_15" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_small_size"
+                    android:layout_height="@dimen/icon_small_size"
+                    android:src="@drawable/orange_greater_than" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop_5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llGreenRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_green_light"
+                android:padding="@dimen/padding_5"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:src="@drawable/green_correct" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_30"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_5"
+                app:layout_constraintStart_toEndOf="@id/llGreenRight"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/complete_at"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_10"
+                    android:text="@string/_8_39_am"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0.5dp"
+                android:layout_height="@dimen/dimen_100"
+                android:layout_marginTop="@dimen/marginTop_10"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="@id/llGreenRight"
+                app:layout_constraintStart_toStartOf="@id/llGreenRight"
+                app:layout_constraintTop_toBottomOf="@id/llGreenRight" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@id/view"
+                app:layout_constraintStart_toStartOf="@id/llText"
+                app:layout_constraintTop_toTopOf="@id/view">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_color_bottom"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_20">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/corner_10">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/food7" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_30"
+                        android:layout_toEndOf="@id/cImage"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="@string/arrived_order"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textSize_11" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv"
+                        android:layout_marginLeft="@dimen/margin_left_30"
+                        android:layout_toEndOf="@id/cImage"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/on"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textSize_11" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_left_10"
+                            android:text="@string/stemon_diy"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textSize_11" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop_10"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llGreenRight2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_bottom_color_blue_light"
+                android:padding="@dimen/padding_5"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:src="@drawable/ic_trade" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_30"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_5"
+                app:layout_constraintStart_toEndOf="@id/llGreenRight2"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_on_the_way"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="0.5dp"
+                android:layout_height="@dimen/dimen_100"
+                android:layout_marginTop="@dimen/marginTop_10"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="@id/llGreenRight2"
+                app:layout_constraintStart_toStartOf="@id/llGreenRight2"
+                app:layout_constraintTop_toBottomOf="@id/llGreenRight2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@id/view2"
+                app:layout_constraintStart_toStartOf="@id/llText2"
+                app:layout_constraintTop_toTopOf="@id/view2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_orange"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_20">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cImage2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/corner_10">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/food7" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_30"
+                        android:layout_toEndOf="@id/cImage2"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="@string/arrived_order"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textSize_11" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv2"
+                        android:layout_marginLeft="@dimen/margin_left_30"
+                        android:layout_toEndOf="@id/cImage2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/on"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textSize_11" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_left_10"
+                            android:text="@string/stemon_diy"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textSize_11" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop_10"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llGreenRight3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_orange_light"
+                android:padding="@dimen/padding_5"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:src="@drawable/ic_clock" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_30"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_5"
+                app:layout_constraintStart_toEndOf="@id/llGreenRight3"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/driver_puck_up_item_at"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_10"
+                    android:text="@string/_8_00_am"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_30"
+                android:layout_marginTop="@dimen/marginTop_20"
+                android:background="@drawable/background_bottom_color_gray"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_15"
+                android:paddingTop="@dimen/padding_15"
+                android:paddingBottom="@dimen/padding_15"
+                android:paddingRight="@dimen/padding_30"
+                app:layout_constraintStart_toStartOf="@id/ll"
+                app:layout_constraintTop_toBottomOf="@id/ll"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_orange_light"
+                    android:padding="@dimen/padding_10">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_small_size"
+                        android:layout_height="@dimen/icon_small_size"
+                        android:src="@drawable/ic_truck" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_20"
+                    android:text="@string/hurray"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/textSize_15" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
